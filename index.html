@@ -25,7 +25,7 @@
 <body>
 
 <h1>daybook.</h1>
-<p class="updated">Privacy Policy — last updated September 23, 2026</p>
+<p class="updated">Privacy Policy — last updated [DATE TO BE SET ON PUBLISH]</p>
 
 <hr>
 
@@ -33,25 +33,36 @@
 
 <h2>What daybook. accesses</h2>
 
-<p>To function as a home screen launcher, daybook. requires the following:</p>
+<p>To function as a home screen launcher, and to provide its features, daybook. requires the following:</p>
 
 <ul>
   <li><strong>Default launcher (home app) role.</strong> daybook. registers as a home screen replacement so it can be set as your device's launcher. This is required for any launcher app to work at all.</li>
-  <li><strong>List of installed apps.</strong> daybook. reads the list of apps installed on your device in order to display them in the app drawer and let you choose apps to pin. This information is used only to build the on-device app list and is never transmitted anywhere.</li>
+  <li><strong>List of installed apps.</strong> daybook. reads the list of apps installed on your device (name, icon, and launch entry only) to display them in the app drawer and let you choose apps to pin. This uses Android's narrow "launchable apps" query, not a listing of every package on your device.</li>
+  <li><strong>Icon packs (optional).</strong> If you select an installed icon pack, daybook. reads that pack's icon definitions and artwork to display alternate icons. If you manually choose a specific icon for an app, that choice is remembered the same way.</li>
+  <li><strong>Network state.</strong> daybook. reads your device's current connection type (Wi-Fi, cellular, ethernet, or offline) and whether a VPN is active, to show this in the status bar. daybook. does not read network names, IP addresses, or any other connection details, and this permission is never used to make network requests of its own.</li>
+  <li><strong>Do Not Disturb and battery state.</strong> Read to optionally display in the status bar.</li>
+  <li><strong>Storage and memory levels.</strong> Read to optionally display in the status bar.</li>
+  <li><strong>Notification access (optional, off by default).</strong> If you enable this from the media widget, daybook. uses it solely to read the currently active media session: the playing app, track title, artist, and playback state, so it can display what's playing and let you control it. daybook. does not read, store, or log the content of your notifications. You can revoke this access at any time in your device's system settings.</li>
+  <li><strong>Default app lookups.</strong> daybook. looks up your device's default phone, messaging, and clock apps so that tapping the relevant elements opens the right app.</li>
 </ul>
 
 <h2>What daybook. does not do</h2>
 
 <ul>
-  <li>daybook. does not collect, store, or transmit any personal data to any server.</li>
-  <li>daybook. does not include advertising or analytics SDKs.</li>
-  <li>daybook. does not access your contacts, messages, photos, location, or any data belonging to other apps beyond their name and icon for display purposes.</li>
-  <li>daybook. has no network permissions beyond what Android grants by default; the app does not make network requests.</li>
+  <li>daybook. makes no network requests of its own. It has no internet permission and cannot send data anywhere, to us or to anyone else.</li>
+  <li>daybook. does not include advertising or analytics SDKs, and does not use crash-reporting services.</li>
+  <li>daybook. does not access your contacts, messages, photos, or location.</li>
+  <li>daybook. does not read or store the content of your notifications.</li>
+  <li>Opening the phone dialer never places a call, and opening messaging never sends a message; both simply open the relevant app for you to use.</li>
 </ul>
 
 <h2>Data storage</h2>
 
-<p>Any preferences you set (such as pinned apps, layout choices, or display options) are stored locally on your device only. Uninstalling daybook. removes this data.</p>
+<p>Your preferences (pinned apps and any custom names you give them, layout and sizing choices, alignment, clock and date formats, status bar settings, icon pack selection and per-app icon choices, and light/dark mode) are stored locally in daybook.'s private app storage. This data is never transmitted anywhere.</p>
+
+<p><strong>Phone-to-phone transfer.</strong> If you set up a new Android device using its built-in transfer tool, the settings listed above move with you to your new phone, the same way they would for any app that supports this. This is a direct, local transfer between your two devices; daybook. does not send this data to any server, and we never have access to it. Notification access is a permission granted separately on each device and does not transfer. daybook. does not participate in cloud backup.</p>
+
+<p>Uninstalling daybook. removes all of its stored data from your device.</p>
 
 <h2>Changes to this policy</h2>
 
@@ -59,7 +70,7 @@
 
 <h2>Contact</h2>
 
-<p>Questions about this policy can be directed via the contact information listed on daybook.'s Play Store listing.</p>
+<p>Questions about this policy can be directed to <a href="mailto:apps@baphim.xyz">apps@baphim.xyz</a>.</p>
 
 </body>
 </html>
